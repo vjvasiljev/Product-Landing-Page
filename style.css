@@ -2,7 +2,43 @@
 
 }
 
-h1 {
-  color: red;
-  background-color: black;
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display:flex;
+  justify-content: space-around;
+  background-color: grey;
+}
+
+#header-img {
+  max-width: 200px;
+  height: auto;
+  align-self: center;
+}
+
+nav {
+  align-self: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+h1, p {
+  display: flex;
+  justify-content: center;
+}
+
+.feature {
+  display: flex;
+}
+
+.feature-img {
+  width: 75px;
+  height: auto;
+  align-self: center;
 }
