@@ -1,0 +1,5 @@
+#ignore folder .vscode
+.vscode/
+#ignore resources
+img/
+vid/
