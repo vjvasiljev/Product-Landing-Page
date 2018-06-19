@@ -11,7 +11,7 @@ body {
 header {}
 
 #header-img {
-  max-width: 200px;
+  max-width: 150px;
   height: auto;
   width: auto;
   align-self: center;
@@ -48,11 +48,11 @@ header {}
 .nav-link {
   color: rgb(255, 255, 255);
   background-color: #000000cc;
-  padding: 8px 16px;
-  margin: 5px;
+  padding: 6px 12px;
+  margin: 3px;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 0.85em;
+  font-size: 0.7em;
   font-weight: 500;
 }
 
@@ -80,11 +80,15 @@ p {
   justify-content: center;
 }
 
+#video {
+  max-width: 90%;
+}
+
 #features {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   max-width: 80%;
   padding: 25px 0;
 }
@@ -92,7 +96,7 @@ p {
 .feature {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .feature-heading-description {
@@ -107,6 +111,10 @@ p {
 
 .feature-heading-description p {
   font-size: 0.85em;
+}
+
+.feature-description {
+  display: none;
 }
 
 .feature-img {
@@ -199,4 +207,18 @@ p {
 #copyright {
   font-size: 0.8em;
   font-weight: 200;
+}
+
+@media only screen and (min-width: 600px) {
+  .feature-description {
+    display: inline;
+  }
+  #header-img {
+    max-width: 200px;
+  }
+  .nav-link {
+    padding: 8px 16px;
+    margin: 5px;
+    font-size: 0.85em;
+  }
 }
