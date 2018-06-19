@@ -13,6 +13,7 @@ header {}
 #header-img {
   max-width: 200px;
   height: auto;
+  width: auto;
   align-self: center;
 }
 
@@ -139,4 +140,18 @@ p {
 
 #footer {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav-footer {
+  display: flex;
+  height: 75px;
+  align-items: center;
+}
+
+#creativecommons, #copyright {
+  font-size: 0.8em;
+  font-weight: 200;
 }
